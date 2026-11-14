@@ -15,6 +15,7 @@
     "build:server": "npm run build -w server",
     "build:client": "npm run build -w client",
     "test": "npm run test -w server",
+    "simulate": "npm run simulate -w server",
     "start": "node server/dist/index.js"
   },
   "devDependencies": {

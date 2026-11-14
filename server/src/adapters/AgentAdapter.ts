@@ -29,7 +29,7 @@ export interface AgentAdapter {
   /**
    * Publishes a typed, structured project memory entry (contract, test evidence, etc.).
    */
-  publishContext(agentId: string, taskId: string, entry: Omit<ContextEntry, 'id' | 'version' | 'createdAt' | 'sourceAgentId'>): Promise<ValidationResult>;
+  publishContext(agentId: string, taskId: string, entry: Omit<ContextEntry, 'id' | 'version' | 'createdAt' | 'sourceAgentId' | 'taskId'>): Promise<ValidationResult>;
 
   /**
    * Sends a session heartbeat to extend local cryptographic lease validity.

@@ -52,7 +52,7 @@ export class MockAgentAdapter implements AgentAdapter {
   public async publishContext(
     agentId: string,
     taskId: string,
-    entry: Omit<ContextEntry, 'id' | 'version' | 'createdAt' | 'sourceAgentId'>
+    entry: Omit<ContextEntry, 'id' | 'version' | 'createdAt' | 'sourceAgentId' | 'taskId'>
   ): Promise<ValidationResult> {
     const valResult = this.validationService.validateContextPublish(agentId, taskId, entry);
     if (!valResult.accepted) {

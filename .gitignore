@@ -11,6 +11,8 @@ server/dist/
 data/store.json
 data/events.jsonl
 data/*.log
+server/data/
+data-test-*/
 
 # Environment
 .env

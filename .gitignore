@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+build/
+client/dist/
+server/dist/
+
+# Runtime data
+data/store.json
+data/events.jsonl
+data/*.log
+
+# Environment
+.env
+.env.local
+*.local
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+*.tsbuildinfo
+.vscode/
+.idea/
